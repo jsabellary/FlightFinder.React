@@ -11,6 +11,9 @@ const Layout: React.FC = () => {
 
   return (
     <div className="app-container">
+      <div className="app-banner">
+        This Flight Finder app is designed in React and is deployed on AWS Amplify (serverless) via GitHub
+      </div>
       <div id="search-and-results-area">
         <div id="search-area">
           <div className="search-container">
@@ -36,6 +39,9 @@ const Layout: React.FC = () => {
           onRemoveItinerary={state.removeFromShortlist}
         />
       </div>
+      <footer className="app-footer">
+        © 2025 Judson Able Bellary · Salisbury, UK · 07716 016915
+      </footer>
     </div>
   )
 }
